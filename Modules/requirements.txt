@@ -1,0 +1,18 @@
+## Core scraping
+# NOTE: The 'arxiv' package is no longer used in scraper.py.
+# scraper.py was refactored to use direct HTTP GET via 'requests' instead,
+# because the arxiv client triggers HTTP 500 errors on arXiv's export API
+# when combined with the submittedDate range filter.
+# The 'arxiv' line below is kept for reference only — it is safe to remove.
+# arxiv>=2.0.0
+PyMuPDF>=1.23.0
+Pillow
+requests
+tqdm
+
+## Trend analysis
+scikit-learn>=1.3.0
+scipy>=1.11.0
+pandas>=2.0.0
+numpy>=1.24.0
+plotly>=5.18.0
